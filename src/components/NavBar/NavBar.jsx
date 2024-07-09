@@ -1,4 +1,4 @@
-import "./navbar.scss"
+import "./NavBar.scss"
 import logoCideco from "../../assets/img/escudo_cideco.png"
 import CartWidget from "./CartWidget/CartWidget.jsx"
 
