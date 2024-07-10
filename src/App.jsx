@@ -4,8 +4,6 @@ import NavBar from './components/NavBar/NavBar'
 
 function App() {
 
-  const saludo = "Hola"
-
   return (
     <div>
       <NavBar />
