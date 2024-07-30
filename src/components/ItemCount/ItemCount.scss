@@ -1,0 +1,36 @@
+.itemcount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    .numerito{
+        font-size: 1.5rem;
+    }
+
+    button{
+        border: 0;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: yellow;
+        cursor: pointer;
+        
+
+        &:hover{
+            background-color: rgb(136, 136, 39);
+            color: white;
+            transition: transform 0.3s;
+        }
+    }
+
+    .agregar-carrito{
+        background-color: black;
+        color: white;
+
+        &:hover{
+            background-color: red;
+        }
+    }
+}
