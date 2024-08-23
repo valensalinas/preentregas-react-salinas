@@ -65,7 +65,7 @@ const ItemListContainer = ({ saludo }) => {
                 </div>
             ) : (
                 <div className='productosCargados'>
-                    <p>{saludo}</p>
+                    {!idCategoria && <p>{saludo}</p>}
                     <ItemList productos={productos} />
                 </div>
             )}
