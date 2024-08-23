@@ -1,8 +1,30 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Ecommerce - CIDECO Handball
 
-Currently, two official plugins are available:
+## Dev. Valentin Salinas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este es un proyecto desarrollado en React como parte de las preentregas de un curso de desarrollo web. El sitio está diseñado para simular un e-commerce, donde se pueden visualizar productos, categorías y realizar compras. Se implementa un carrito de compras que permite a los usuarios agregar, modificar y eliminar productos antes de finalizar la compra.
+
+## Tecnologías Utilizadas
+
+![My Skills](https://skillicons.dev/icons?i=react,firebase,vercel,vscode,sass,css,html,js,npm,git,githun,=3)
+- **React**
+- **Firebase**
+- **React Router**:
+- **React Spinners**
+- **Sass**
+- **React-dom**
+- **React-icons**
+- **React-toastify**
+- **Firebase**
+- **Firebase-firestore**
+- **yup**
+- **vite**
+
+## Características del Proyecto
+
+- **Lista de Productos**: Visualización de productos con la opción de filtrar por categorías.
+- **Detalle del Producto**: Vista detallada de cada producto con información adicional.
+- **Carrito de Compras**: Funcionalidad para agregar, eliminar o modificar productos en el carrito.
+- **Checkout**: Proceso de finalización de compra que incluye un formulario de contacto y la creación de una orden en la base de datos.
+
