@@ -1,3 +1,6 @@
+import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
+import db from "../db/db.js";
+
 const productos = [
     {
         id: 'artcid-00001',
@@ -86,6 +89,7 @@ const productos = [
         price: 8000,
         img: '/img/productos/media-de-compresion-negra.webp',
         description: 'Media de compresión x2 de color negro.',
+        stock: 10,
         categoria: 'medias'
     },
     {
@@ -99,15 +103,21 @@ const productos = [
     },
 ]
 
-const obtenerProductos = () => {
-    return new Promise((resolve, reject) => {
+const seedProducts = async () => {
+    const productosRef = collection(db, "products");
 
-        //Simulación de retraso de red
-        
-        setTimeout(() => {
-            resolve(productos)
-        }, 2000);
-    });
+    for (const { id, ...rest } of productos) {
+
+        const q = query(productosRef, where("id", "==", id));
+        const querySnapshot = await getDocs(q);
+
+        if (querySnapshot.empty) {
+            await addDoc(productosRef, rest);
+            console.log(`Producto con ID ${id} agregado correctamente.`);
+        } else {
+            console.log(`Producto con ID ${id} ya existe en la base de datos.`);
+        }
+    }
 };
 
-export default obtenerProductos
+seedProducts()

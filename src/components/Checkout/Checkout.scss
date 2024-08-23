@@ -1,0 +1,98 @@
+.form-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    margin: auto;
+    margin-top: 130px;
+    border-radius: 10px;
+
+    h3{
+        padding: 10px 70px;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+
+    label{
+        font-weight: 600;
+        color: rgb(255, 238, 0);
+        display: none;
+    }
+
+    input{
+        background: transparent;
+        border-radius: 5px;
+        height: 40px;
+        width: 100%;
+        margin: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 10px;
+        border: solid 1px rgb(255, 238, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    .button-form{
+        height: 40px;
+        width: 16rem;
+        margin-top: 30px;
+        border-radius: 5px;
+        background-color: rgb(255, 238, 0);
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 86vh;
+
+    .order-completed{
+        background-color: rgba(255, 255, 0, 0.404);
+        padding: 60px;
+        border-radius: 20px;
+
+        h2{
+            margin: 30px;
+            font-size: 30px;
+        }
+
+        p{
+            margin-top: 40px;
+            font-size: 16px;
+
+            .idOrden{
+                font-size: 20px;
+            }
+        }
+
+        .button-volver-inicio{
+            background-color: rgb(19, 19, 19);
+            border: none;
+            color: white;
+            width: 200px;
+            border-radius: 5px;
+            border: 2px solid rgb(93, 93, 93);
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: -20px;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: .5em;
+
+            &:hover{
+                background-color: rgb(255, 0, 0);
+                color: black;
+            }
+        }
+    }
+}

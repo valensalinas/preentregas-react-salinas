@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
+    min-height: 76vh;
 
     .imagen {
         display: flex;
@@ -41,5 +42,37 @@
                 margin-bottom: 40px;
             }
         }
+
+        .button-detail{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(19, 19, 19);
+            border: none;
+            color: white;
+            width: 200px;
+            border-radius: 5px;
+            border: 2px solid rgb(93, 93, 93);
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: .5em;
+
+            &:hover{
+                background-color: yellow;
+                color: black;
+            }
+        }
     }
+}
+
+.estaCargando{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
